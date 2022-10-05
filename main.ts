@@ -6,12 +6,22 @@ input.onButtonPressed(Button.A, function () {
         basic.clearScreen()
     }
 })
+// 1+2+3+4+5+.....+10
+// 
+// sum=0+1=1
+// count 2
+// sum=1=2
+// count 3 
+// sum=3+3
 input.onButtonPressed(Button.B, function () {
-    for (let index = 0; index < 9; index++) {
+    for (let index = 0; index < 1000000; index++) {
         Counter += 1
-        basic.showNumber(Counter)
+        sum = sum + Counter
     }
+    basic.showNumber(sum)
 })
+let sum = 0
 let Counter = 0
 Counter = 0
+sum = 0
 basic.showNumber(Counter)
